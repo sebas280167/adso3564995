@@ -1,2 +1,7 @@
 # adso3564995
-lorem ipsom dolor sit amet
+![profile picture](images/imagen.webp)
+## sebatian gonzalez alzate 
+### Analisis y desarrollo de software 
+***Centro de procesos industriales y construccion***
+> SENA - Regional caldas
+---
