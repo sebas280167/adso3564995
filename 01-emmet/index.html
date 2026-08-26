@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01-Emmet</title>
+    <link rel="stylesheet" href="../src/css/master.css">
+</head>
+<body class="emmet">
+    <nav class="goback">
+        <a href="../index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#fff" viewBox="0 0 256 256">
+                <path d="M240,208H224V136l2.34,2.34A8,8,0,0,0,237.66,127L139.31,28.68a16,16,0,0,0-22.62,0L18.34,127a8,8,0,0,0,11.32,11.31L32,136v72H16a8,8,0,0,0,0,16H240a8,8,0,0,0,0-16Zm-88,0H104V160a4,4,0,0,1,4-4h40a4,4,0,0,1,4,4Z"></path>
+            </svg>
+        </a>
+    </nav>
+    <main>
+        <header class="mmenu">
+            <h1>01-Emmet</h1>
+            <h2>Plugin for faster HTML and CSS coding.</h2>
+            <img src="../src/images/logo-emmet.svg" alt="Emmet">
+        </header>
+        <section>
+            <h2 class="subtitle">
+                01-Child
+                <span> > </span>
+            </h2>
+            <small>Creates child elements (nesting).</small>
+            <h3>Example:</h3>
+            <p>ul>li>a ↔️</p>
+            <h3>Result:</h3>
+<xmp><ul>
+    <li>
+        <a href=""></a>
+    </li>
+</ul></xmp>
+        </section>
+        <section>
+            <h2 class="subtitle">
+                02-Sibling
+                <span> + </span>
+            </h2>
+            <small>Creates sibling elements.</small>
+            <h3>Example:</h3>
+            <p>header+section+footer ↔️</p>
+            <h3>Result:</h3>
+<xmp><header></header>
+<section></section>
+<footer></footer></xmp>
+        </section>
+        <section>
+            <h2 class="subtitle">
+                03-Multiplication
+                <span> * </span>
+            </h2>
+            <small>Repeats elements multiple times.</small>
+            <h3>Example:</h3>
+            <p>ul>li*3 ↔️</p>
+            <h3>Result:</h3>
+<xmp><ul>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul></xmp>
+        </section>
+        <section>
+            <h2 class="subtitle">
+                04-Class
+                <span> . </span>
+            </h2>
+            <small>Creates a class attribute.</small>
+            <h3>Examples:</h3>
+            <p>div.important ↔️</p>
+            <p>.danger ↔️</p>
+            <h3>Results:</h3>
+<xmp><div class="important"></div>
+<div class="danger"></div></xmp>
+        </section>
+        <section>
+            <h2 class="subtitle">
+                05-Classes
+                <span> ... </span>
+            </h2>
+            <small>Creates multiple class attributes.</small>
+            <h3>Example:</h3>
+            <p>div.red.green.blue ↔️</p>
+            <h3>Result:</h3>
+<xmp><div class="red green blue"></div></xmp>
+        </section>
+        <section>
+            <h2 class="subtitle">
+                06-Identification
+                <span> # </span>
+            </h2>
+            <small>Creates an ID attribute.</small>
+            <h3>Example:</h3>
+            <p>menu#cod123 ↔️</p>
+            <h3>Result:</h3>
+<xmp><menu id="cod123"></menu></xmp>
+        </section>
+        <section>
+            <h2 class="subtitle">
+                07-Text
+                <span> {} </span>
+            </h2>
+            <small>Inserts text content.</small>
+            <h3>Examples:</h3>
+            <p>p{lorem ipsum dolor} ↔️</p>
+            <p>a{Click Here} ↔️</p>
+            <h3>Results:</h3>
+<xmp><p>lorem ipsum dolor</p>
+<a href="">Click Here</a></xmp>
+        </section>
+        <section>
+            <h2 class="subtitle">
+                08-Custom Attributes
+                <span> [] </span>
+            </h2>
+            <small>Creates custom attributes.</small>
+            <h3>Example:</h3>
+            <p>input[type=number] ↔️</p>
+            <h3>Result:</h3>
+<xmp><input type="number"></xmp>
+        </section>
+        <section>
+            <h2 class="subtitle">
+                0-Item Numbering
+                <span> $ </span>
+            </h2>
+            <small>Adds consecutive numbers.</small>
+            <h3>Example:</h3>
+            <p>ul>li.option$$*3 ↔️</p>
+            <h3>Result:</h3>
+<xmp><ul>
+    <li class="option01"></li>
+    <li class="option02"></li>
+    <li class="option03"></li>
+</ul></xmp>
+        </section>
+        
+        
+    </main>
+</body>
+</html>
