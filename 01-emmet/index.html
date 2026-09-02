@@ -222,15 +222,20 @@
 
         </section>
 
-           <section>
-            <h2 class="subtitle">
-               15-HTML Documents
-                <span> html </span>
+                    </ul>
+            </div>
+        </div>      
+        
+    <section>
+    <h2 class="subtitle">
+                   15-HTML Documents
+                <span style="font-size: 0.5rem;"> html </span>
             </h2>
             <small>Creates various HTML document types.</small>
             <h3>Examples: </h3>
             <p>html:xs ↔️</p>
             <p>html:xt  ↔️</p>
+            <p>html:xt ↔️</p>
             <p>html:4s ↔️</p>
             <p>html:4t ↔️</p>
             <p>html:5 ↔️</p>
@@ -241,39 +246,42 @@
             <html:4s></html:4s>
             <html:4t></html:4t>       
 </xmp>
+            <xmp>
+                <html:xs></html:xs>
+                <html:xt></html:xt>
+                <html:4s></html:4s>
+                <html:4t></html:4t>
+            </xmp>
         </section>
 
-        <>
-            <h2 class="subtitle">
-               16-Meta Tags
-            <span> meta:</span>
+        <section>
+         <h2 class="subtitle">
+                16-Meta Tags
+                <span style="font-size: 0.5rem;"> Meta </span>
             </h2>
             <small>Generates meta tags.</small>
-            <h3>Example: </h3>
+            <h3>Example:</h3>
             <p>meta:vp ↔️</p>
-            <h3>Result: </h3>
+            <h3>Result:</h3>
+<xmp><meta name="viewport" content="width=device-width,
+    initial-scale=1.0" />
+</xmp>
+        </section><section>
+            <h2 class="subtitle">
+                17-Challenge
+                <span> 🚀 </span>
+            </h2>
+            <small>Generates Emmet challenges for practice.</small>
+            <h3>Example:</h3>
+ <p style="font-size: 0.5rem;"> header#header>nav.navbar.navbar-inverse>div.container>(div.navbar-header>button.navbar-toggle[type=button]>(span.sr-only{Toggle navigation}+span.icon-bar+span.icon-bar+span.icon-bar)+a.navbar-brand[href=index.php]>img[src=imgs/logo.png alt=""])+div.collapse>ul.nav.navbar-nav>li>a.link[href=index.html]{Inicio}^li.active.link>a[href=login.html]{Ingresar}^li>a.link[href=registro.html]{Registrarse}^li>a.link[href=contacto.html]{Contacto} ↔️</p>
 
-<xmp>
-<meta name="viewport" content="width=device-width, 
-initial-scale=1.0">       
-</xmp> 
+    <h3>Result:</h3>
 
-        </section>     
-
-<h2 class="subtitle">
-            <h2>
-    17-Challenge
-    <span> 🚀 </span>
-</h2>
-<small> Generates emmet challenges for practice </small>
-<h3>Example:</h3>
-<p style="font-size: 0.5rem;">header#header>nav.navbar.navbar-inverse>div.container>(div.navbar-header>button.navbar-toggle[type=button]>(span.sr-only{Toggle navigation}+span.icon-bar+span.icon-bar+span.icon-bar)+a.navbar-brand[href=index.php]>img[src=imgs/logo.png alt=""])+div.collapse>ul.nav.navbar-nav>li>a.link[href=index.html]{Inicio}^li.active.link>a[href=login.html]{Ingresar}^li>a.link[href=registro.html]{Registrarse}^li>a.link[href=contacto.html]{Contacto}</p>
-<h3>Result:</h3>
-
-<xmp style="font-size: 0.5rem;">
+    <xmp style="font-size: 0.5rem;">
 <header id="header">
     <nav class="navbar navbar-inverse">
         <div class="container">
+
             <div class="navbar-header">
                 <button class="navbar-toggle" type="button">
                     <span class="sr-only">Toggle navigation</span>
@@ -281,26 +289,32 @@ initial-scale=1.0">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="index.php" class="navbar-brand">
+
+                <a class="navbar-brand" href="index.php">
                     <img src="imgs/logo.png" alt="">
                 </a>
             </div>
+
             <div class="collapse">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="index.html" class="link">Inicio</a>
+                        <a class="link" href="index.html">Inicio</a>
                     </li>
+
                     <li class="active link">
                         <a href="login.html">Ingresar</a>
                     </li>
+
                     <li>
-                        <a href="registro.html" class="link">Registrarse</a>
+                        <a class="link" href="registro.html">Registrarse</a>
                     </li>
+
                     <li>
-                        <a href="contacto.html" class="link">Contacto</a>
+                        <a class="link" href="contacto.html">Contacto</a>
                     </li>
                 </ul>
             </div>
+
         </div>
     </nav>
 </header>
