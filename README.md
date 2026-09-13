@@ -1,5 +1,5 @@
 # adso3564995
-![profile picture](src/imagenes/imagen.webp)
+![profile picture](src/imagenes/image.jpeg)
 ## sebatian gonzalez alzate 
 ### Analisis y desarrollo de software 
 ***Centro de procesos industriales y construccion***
@@ -16,4 +16,5 @@
 ---
 ### LINK
 -[ADSO Files DRIVE](https://tinyurl.com/wnkk334u)
+
 
