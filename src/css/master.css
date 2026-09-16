@@ -1,215 +1,458 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
 
-/* Styles */
 body {
-    background: linear-gradient(to top, #738678, #2c332e);
-    color: #eddcb9aa;
+    background:
+        linear-gradient(
+            to bottom,
+            #087ca7,
+            #0b8f91,
+            #176b45,
+            #123c2b
+        );
+
     background-attachment: fixed;
-    font-family: Poppins;
+    color: #f4fff9;
+    font-family: 'Poppins', sans-serif;
     min-height: 100dvh;
+}
 
-    &.emmet {
-        background: linear-gradient(to top, #7acb16, #192a05);
-        color: #baffa9aa;
 
-        main {
-            header.mmenu {
-                h1 {
-                    border-bottom: 2px solid #baffa9aa;
-                }
-                img {
-                    border: 4px solid #baffa933;
-                }
-            }
-            section {
-                h2.subtitle {
-                    align-items: center;
-                    background-color: #7acb16;
-                    border-radius: 8px;
-                    color: #0009;
-                    display: flex;
-                    font-weight: 500;
-                    justify-content: space-between;
-                    margin: 0;
-                    padding: 0.4rem;
-                    span {
-                        align-items: center;
-                        background-color: #0009;
-                        border-radius: 50%;
-                        color: #fffc;
-                        display: flex;
-                        height: 30px;
-                        justify-content: center;
-                        width: 30px;
-                    }
-                }
-                small {
-                    color: #fff9;
-                }
-                h3 {
-                    margin: 0;
-                    border-bottom: 1px dotted #baffa9aa;
-                }
-                p {
-                    color: #fff9;
-                    font-size: 1.2rem;
-                }
-                xmp {
-                    background-color: #0009;
-                    border-radius: 8px;
-                    color: #fffc;
-                    padding: 0.4rem;
-                }
-            }
-        }
-    }
+/* =========================
+   TEMA HTML
+========================= */
+body.html {
+    background:
+        linear-gradient(
+            to bottom,
+            #087ca7,
+            #075b7a,
+            #123b2c
+        );
 
-    nav.goback {
-        align-items: center;
-        border-radius: 50%;
-        border: 2px solid #fff;
-        display: flex;
-        height: 40px;
-        justify-content: center;
-        left: 6px;
-        opacity: .6;
-        position: fixed;
-        top: 6px;
-        transition: all 0.4s ease-in;
-        width: 40px;
-        &:hover {
-            opacity: .9;
-            transform: scale(1.1);
-        }
-    }
+    background-attachment: fixed;
+    color: #e8fff8;
+}
 
-    main {
-        background: linear-gradient(to bottom, #0009, #0000);
-        border-radius: 0.6rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 1rem;
-        margin: 1.4rem auto;
-        width: 380px;
+body.html main {
+    background:
+        linear-gradient(
+            to bottom,
+            #064f68dd,
+            #092c27e8
+        );
+}
 
-        header.mmenu {
-            text-align: center;
+body.html header.mmenu h1 {
+    color: #7eeedb;
+    border-bottom: 2px solid #36d6bd;
+}
 
-            h1 {
-                font-size: 3rem;
-                font-weight: 200;
-                border-bottom: 2px solid #eddcb9aa;
-                margin: 0;
-            }
-            h2 {
-                font-size: 1.2rem;
-                font-weight: 500;
-                margin: 0;
-            }
-            img {
-                margin: 2rem auto;
-                border: 4px solid #eddcb933;
-                border-radius: 50%;
-                object-fit: cover;
-                height: 280px;
-                width: 280px;
-            }
-            h3 {
-                font-size: 1.2rem;
-                font-weight: 600;
-                margin: 0;
-            }
-            h4 {
-                font-size: 0.94rem;
-                font-weight: 200;
-                margin: 0;
-            }
-            h5 {
-                font-size: 1rem;
-                font-weight: 400;
-                margin: 0;
-            }
-        }
+body.html header.mmenu img {
+    border: 4px solid #36d6bd;
+}
 
-        section {
-            background-color: #0009;
-            border-radius: 8px;
-            padding: 0.6rem;
-            margin: 1rem auto;
-            width: 360px;
-        }
+body.html header.mmenu h3,
+body.html header.mmenu h4,
+body.html header.mmenu h5 {
+    color: #a8fff0;
+}
 
-        menu.mmenu {
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            padding: 0;
-            margin: 2rem auto;
-            gap: 0.6rem;
-            justify-content: center;
-            
-            a:is(:link, :visited) {
-                background-color: #0009;
-                border-radius: 5rem;
-                text-decoration: none;
-                color: #eddcb9aa;
-                display: flex;
-                justify-content: start;
-                align-items: center;
-                padding: 0.6rem;
-                transition: all 0.4s ease-in;
-                width: 280px;
+body.html menu.mmenu a:is(:link, :visited) {
+    background-color: #062f32cc;
+}
 
-                &:is(:hover) {
-                    background-color: #738678;
-                    color: #0009;
-                    transform: scale(1.05) translateX(16px);
+body.html menu.mmenu a:hover {
+    background-color: #08a88e;
+}
 
-                    span {
-                        background-color: #0009;
-                        color: #fff9;
-                    }
+body.html menu.mmenu a:hover span {
+    background-color: #063d45;
+    color: #fff;
+}
 
-                    aside {
-                        small {
-                            color: #0004;
-                        }
-                    }
-                }
+body.html menu.mmenu a span {
+    background-color: #0b9f8a !important;
+}
 
-                span {
-                    align-items: center;
-                    display: flex;
-                    font-size: 1.8rem;
-                    border-radius: 50%;
-                    background-color: #738678;
-                    color: #0009;
-                    justify-content: center;
-                    height: 60px;
-                    transition: all 0.8s ease-out;
-                    width: 60px;
-                }
 
-                aside {
-                    display: flex;
-                    justify-content: center;
-                    margin-left: 0.6rem;
-                    flex-direction: column;
-                    align-items: start;
-                    h4 {
-                        font-size: 1.6rem;
-                        font-weight: 500;
-                        margin: 0;
-                    }
-                    small {
-                        font-size: 0.6rem;
-                        color: #eddcb944;
-                    }
-                } 
-            }
-        }
-    }
+/* =========================
+   TEMA EMMET
+========================= */
+body.emmet {
+    background:
+        linear-gradient(
+            to bottom,
+            #075e3b,
+            #159447,
+            #0a5740
+        );
+
+    background-attachment: fixed;
+    color: #d9fff0;
+}
+
+body.emmet main {
+    background:
+        linear-gradient(
+            to bottom,
+            #08734cdd,
+            #06382be8
+        );
+}
+
+body.emmet header.mmenu h1 {
+    color: #a8ffe2;
+    border-bottom: 2px solid #55e6b0;
+}
+
+body.emmet header.mmenu img {
+    border: 4px solid #55e6b0;
+}
+
+body.emmet section h2.subtitle {
+    align-items: center;
+    background: linear-gradient(
+        90deg,
+        #159f6c,
+        #13b89a
+    );
+
+    border-radius: 8px;
+    color: #062d25;
+    display: flex;
+    font-weight: 500;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0.4rem;
+}
+
+body.emmet section h2.subtitle span {
+    align-items: center;
+    background-color: #063c31;
+    border-radius: 50%;
+    color: #8fffe0;
+    display: flex;
+    height: 30px;
+    width: 30px;
+    justify-content: center;
+}
+
+body.emmet section small {
+    color: #d9fff0aa;
+}
+
+body.emmet section h3 {
+    margin: 0;
+    border-bottom: 1px solid #7eeedbaa;
+}
+
+body.emmet section p {
+    color: #effffaaa;
+    font-size: 1.2rem;
+}
+
+body.emmet section xmp {
+    background-color: #021c18cc;
+    border-radius: 8px;
+    color: #ffffff;
+    padding: 0.4rem;
+}
+
+
+/* =========================
+   BOTÓN REGRESAR
+========================= */
+nav.goback {
+    align-items: center;
+    border-radius: 50%;
+    border: 2px solid #dffff7;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    left: 6px;
+    opacity: .7;
+    position: fixed;
+    top: 6px;
+    transition: all 0.4s ease-in;
+    width: 40px;
+    z-index: 10;
+
+    background-color: #063c3caa;
+}
+
+nav.goback a:is(:link, :visited) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+nav.goback:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    background-color: #08a88e;
+}
+
+
+/* =========================
+   CONTENEDOR PRINCIPAL
+========================= */
+main {
+    background:
+        linear-gradient(
+            to bottom,
+            #075b46e8,
+            #062e29e8
+        );
+
+    border: 1px solid #6be8c477;
+    box-shadow:
+        0 10px 35px #001b1788,
+        0 0 20px #0bd3ad22;
+
+    border-radius: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1rem;
+    margin: 1.4rem auto;
+
+    width: 380px;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+header.mmenu {
+    text-align: center;
+}
+
+header.mmenu.internal h1 {
+    font-size: 2rem;
+}
+
+header.mmenu.internal img {
+    height: 80px;
+    width: 80px;
+}
+
+header.mmenu h1 {
+    color: #8cefe0;
+    font-size: 2rem;
+    font-weight: 700;
+
+    border-bottom: 2px solid #37cdb7;
+    margin: 0;
+}
+
+header.mmenu h2 {
+    color: #9deee2;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+header.mmenu img {
+    margin: 2rem auto;
+
+    border: 4px solid #35cdb7;
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    height: 280px;
+    width: 280px;
+
+    box-shadow:
+        0 0 25px #00d9bb55;
+}
+
+header.mmenu h3 {
+    color: #b0fff2;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+header.mmenu h4 {
+    color: #a8e9df;
+    font-size: 0.94rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+header.mmenu h5 {
+    color: #9bdcd3;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+
+/* =========================
+   SECCIONES
+========================= */
+main section {
+    background:
+        linear-gradient(
+            145deg,
+            #062e2bcc,
+            #031b1acc
+        );
+
+    border: 1px solid #4dd9bd44;
+    border-radius: 8px;
+
+    box-shadow:
+        0 5px 15px #001b1688;
+
+    padding: 0.6rem;
+    margin: 1rem auto;
+
+    min-height: 240px;
+    width: 350px;
+}
+
+main section h3.subtitle {
+    color: #8ff5df;
+
+    font-weight: 500;
+    padding-bottom: 0.2rem;
+
+    border-bottom: 2px dotted #69e7c899;
+}
+
+main section p {
+    color: #e8fffaaa;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   MENÚ
+========================= */
+menu.mmenu {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 0;
+    margin: 2rem auto;
+
+    gap: 0.6rem;
+    justify-content: center;
+}
+
+menu.mmenu a:is(:link, :visited) {
+    background:
+        linear-gradient(
+            90deg,
+            #063d3dcc,
+            #092c38dd
+        );
+
+    border: 1px solid #45d8c055;
+    border-radius: 5rem;
+
+    text-decoration: none;
+    color: #effffb;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    padding: 0.6rem;
+
+    transition: all 0.4s ease-in;
+
+    width: 280px;
+
+    box-shadow: 0 4px 12px #001b1888;
+}
+
+menu.mmenu a:is(:link, :visited):hover {
+    background:
+        linear-gradient(
+            90deg,
+            #08a98e,
+            #075b75
+        );
+
+    color: #ffffff;
+
+    transform: scale(1.05) translateX(16px);
+
+    box-shadow:
+        0 6px 20px #00d6b655;
+}
+
+menu.mmenu a span {
+    align-items: center;
+
+    display: flex;
+
+    font-size: 1.8rem;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #11bda2,
+            #087fa2
+        );
+
+    color: #032c2c;
+
+    justify-content: center;
+
+    height: 60px;
+
+    transition: all 0.8s ease-out;
+
+    width: 60px;
+
+    flex-shrink: 0;
+}
+
+menu.mmenu a:hover span {
+    background:
+        linear-gradient(
+            135deg,
+            #e53232,
+            #1746a2
+        );
+
+    color: white;
+
+    transform: rotate(8deg);
+}
+
+menu.mmenu a aside {
+    display: flex;
+    justify-content: center;
+
+    margin-left: 0.6rem;
+
+    flex-direction: column;
+    align-items: start;
+}
+
+menu.mmenu a aside h4 {
+    color: #eafff9;
+
+    font-size: 1.6rem;
+    font-weight: 500;
+
+    margin: 0;
+}
+
+menu.mmenu a aside small {
+    font-size: 0.6rem;
+    color: #c8fff3aa;
 }
