@@ -1,101 +1,93 @@
+/* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
 
+/* Styles */
 body {
-    background: linear-gradient(to top, #082aea, #15d84cc9);
+    background: linear-gradient(to top, #738678, #2c332e);
     background-attachment: fixed;
-    color: #13e6b8aa;
+    color: #eddcb9aa;
     font-family: Poppins;
     min-height: 100dvh;
 
-    &.html {
-        background: linear-gradient(to top, #e44d26, #1f0a05);
+    &.css {
+        background: linear-gradient(to top, #663399, #0e0715);
         background-attachment: fixed;
-        color: #f9966baa;
-
+        color: #caa0f5aa;
         main {
             header.mmenu {
                 h1 {
-                    border-bottom: 2px solid #f9966baa;
+                    border-bottom: 2px solid #caa0f5aa;
                 }
-
                 img {
-                    border: 4px solid #f9966baa;
+                    border: 4px solid #caa0f5aa;
+                }
+                h3 {
+                    font-weight: 300;
+                }
+                ul, ol {
+                    color: #fff9;
+                    text-align: left;
                 }
             }
-
-            menu.mmenu {
+           menu.mmenu {
                 a:is(:link, :visited) {
                     &:hover {
-                        background-color: #e44d26;
-
+                        background-color: #663399;
                         aside {
                             h4 {
                                 color: #fff9;
                             }
                         }
                     }
-
                     span {
-                        background-color: #e44d26;
+                        background-color: #663399;
                         height: 50px;
                         font-size: 1.4rem;
                         width: 50px;
                         color: #fff9;
                     }
-
                     aside {
                         h4 {
+                             color: #fff9;
                             font-size: 1.2rem;
                         }
                     }
                 }
-            }
-
-            section {
-                p,
-                ul,
-                ol {
+           } 
+           section {
+                p, ul, ol {
                     color: #fff9;
                 }
             }
         }
     }
 
-    &.css {
-        background: linear-gradient(to top, #663399, #0e0715);
+    &.html {
+        background: linear-gradient(to top, #e44d26, #1f0a05);
         background-attachment: fixed;
-        color: #caa0f5aa;
-
+        color: #f9966baa;
         main {
             header.mmenu {
                 h1 {
-                    border-bottom: 2px solid #caa0f5aa;
+                    border-bottom: 2px solid #f9966baa;
                 }
-
                 img {
-                    border: 4px solid #caa0f5aa;
+                    border: 4px solid #f9966baa;
+                }
+                h3 {
+                    font-weight: 300;
                 }
             }
-            h3{
-                font-weight: 300;
-                }
-                ul, ol {
-                    color: #fff9ff;
-                    text-align:left;
-                    }
-                }
-            menu.mmenu {
+           menu.mmenu {
                 a:is(:link, :visited) {
                     &:hover {
-                        background-color: #663399;
-
+                        background-color: #e44d26;
                         aside {
                             h4 {
                                 color: #fff9;
                             }
                         }
                     }
-
                     span {
                         background-color: #e44d26;
                         height: 50px;
@@ -103,20 +95,17 @@ body {
                         width: 50px;
                         color: #fff9;
                     }
-
                     aside {
                         h4 {
+                            color: #fff9;
                             font-size: 1.2rem;
                         }
                     }
                 }
-            }
-
-            section {
-                p,
-                ul,
-                ol {
-                    color: #fff9ff;
+           } 
+           section {
+                p, ul, ol {
+                    color: #fff9;
                 }
             }
         }
@@ -132,12 +121,10 @@ body {
                 h1 {
                     border-bottom: 2px solid #baffa9aa;
                 }
-
                 img {
                     border: 4px solid #baffa933;
                 }
             }
-
             section {
                 h2.subtitle {
                     align-items: center;
@@ -149,7 +136,6 @@ body {
                     justify-content: space-between;
                     margin: 0;
                     padding: 0.4rem;
-
                     span {
                         align-items: center;
                         background-color: #0009;
@@ -162,21 +148,17 @@ body {
                         width: 30px;
                     }
                 }
-
                 small {
                     color: #fff9;
                 }
-
                 h3 {
                     margin: 0;
                     border-bottom: 1px dotted #baffa9aa;
                 }
-
                 p {
                     color: #fff9;
                     font-size: 1.2rem;
                 }
-
                 xmp {
                     background-color: #0009;
                     border-radius: 8px;
@@ -200,7 +182,11 @@ body {
         top: 6px;
         transition: all 0.4s ease-in;
         width: 40px;
-
+        a:is(:link, :visited) {   
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
         &:hover {
             opacity: .9;
             transform: scale(1.1);
@@ -220,31 +206,24 @@ body {
 
         header.mmenu {
             text-align: center;
-
             &.internal {
-                h1 {
-                    font-size: 2rem;
-                }
-
+                h1 { font-size: 2rem; }
                 img {
                     height: 80px;
                     width: 80px;
-                }
+                 }
             }
-
             h1 {
                 font-size: 3rem;
                 font-weight: 200;
                 border-bottom: 2px solid #eddcb9aa;
                 margin: 0;
             }
-
             h2 {
                 font-size: 1.2rem;
                 font-weight: 500;
                 margin: 0;
             }
-
             img {
                 margin: 2rem auto;
                 border: 4px solid #eddcb933;
@@ -253,19 +232,16 @@ body {
                 height: 280px;
                 width: 280px;
             }
-
             h3 {
                 font-size: 1.2rem;
                 font-weight: 600;
                 margin: 0;
             }
-
             h4 {
                 font-size: 0.94rem;
                 font-weight: 200;
                 margin: 0;
             }
-
             h5 {
                 font-size: 1rem;
                 font-weight: 400;
@@ -278,17 +254,18 @@ body {
             border-radius: 8px;
             padding: 0.6rem;
             margin: 1rem auto;
+            min-height: 240px;
             width: 360px;
-        h3.subtitle {
-            font-weight: 500;
-            padding-bottom: 0.2rem;
-            border-bottom: 2px dotted #fff9;
+            h3.subtitle {
+                font-weight: 500;
+                padding-bottom: 0.2rem;
+                border-bottom: 2px dotted #fff9;
             }
             p {
-                color:#fff9;
+                color: #fff9;
                 text-align: justify;
-                }
             }
+        }
 
         menu.mmenu {
             display: flex;
@@ -298,7 +275,7 @@ body {
             margin: 2rem auto;
             gap: 0.6rem;
             justify-content: center;
-
+            
             a:is(:link, :visited) {
                 background-color: #0009;
                 border-radius: 5rem;
@@ -333,7 +310,7 @@ body {
                     display: flex;
                     font-size: 1.8rem;
                     border-radius: 50%;
-                    background-color: #2245df;
+                    background-color: #738678;
                     color: #0009;
                     justify-content: center;
                     height: 60px;
@@ -347,18 +324,17 @@ body {
                     margin-left: 0.6rem;
                     flex-direction: column;
                     align-items: start;
-
                     h4 {
                         font-size: 1.6rem;
                         font-weight: 500;
                         margin: 0;
                     }
-
                     small {
                         font-size: 0.6rem;
                         color: #eddcb944;
                     }
-                }
+                } 
             }
         }
     }
+}

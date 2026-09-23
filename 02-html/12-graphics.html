@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12-Graphics</title>
+    <link rel="stylesheet" href="/src/style.css">
+    <style>
+        canvas, svg {
+            margin: 0 auto;
+            display: block;
+        }
+    </style>
+</head>
+<body class="html">
+    <nav class="goback">
+        <a href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#fff" viewBox="0 0 256 256">
+                <path d="M208,72H128V32a8,8,0,0,0-13.66-5.66l-96,96a8,8,0,0,0,0,11.32l96,96A8,8,0,0,0,128,224V184h80a16,16,0,0,0,16-16V88A16,16,0,0,0,208,72Zm0,96H120a8,8,0,0,0-8,8v28.69L35.31,128,112,51.31V80a8,8,0,0,0,8,8h88Z"></path>
+            </svg>
+        </a>
+    </nav>
+    <main>
+        <header class="mmenu internal">
+            <h1>12-Graphics</h1>
+            <img src="../src/images/logo-html.png" alt="Html">
+            <h3>Creates inline graphics with tags.</h3>
+        </header>
+        <section>
+           <h3 class="subtitle">Canvas:</h3>
+           <canvas id="circle"></canvas>
+           <h3 class="subtitle">SVG:</h3>
+           
+        </section>
+    </main>
+    <script>
+        const canvas = document.getElementById('circle')
+        const context = canvas.getContext('2d')
+        context.fillStyle = '#ff0000';
+        context.beginPath();
+        context.arc(150,60,60,0,Math.PI*2,true);
+        context.closePath();
+        context.fill();
+    </script>
+</body>
+</html>
