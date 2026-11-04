@@ -3,28 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>30-text-shadow</title>
+    <title>30-Text Shadowe</title>
     <link rel="stylesheet" href="../src/css/master.css">
     <style>
         section {
-            font-size: 4rem;
-            font-weight: 600;
-            margin: 1rem 0;
-            text-align: center;
+            p.txt {
+                font-size: 4rem;
+                font-weight: 600;
+                text-align: center;
+                margin: 0;
 
-            &.txt1 {
-             color: #000;
-             text-shadow: 0 0 6px white
+                &.txt1 {
+                    color: black;
+                    text-shadow: 0 0 6px white;
+                }
+                &.txt2 {
+                    color: black;
+                    text-shadow: -4px -4px 4px white;
+                }
+                &.txt3 {
+                    color: white;
+                    text-shadow: 5px 5px 15px rgb(0, 200, 255),
+                                 -5px -5px 15px rgb(251, 3, 234),
+                                 0px 0px 20px white;
+                }
             }
-            &.txt2 {
-                color: #000;
-                text-shadow: 
-            }
-
         }
     </style>
 </head>
-<body class="html">
+<body class="css">
     <nav class="goback">
         <a href="index.html">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#fff" viewBox="0 0 256 256">
@@ -36,13 +43,11 @@
     </nav>
 <main>
     <header class="mmenu internal">
-        <h1>30-text-shadow</h1>
-                <figure class="frame">
-                <img src="../src/imagenes/logo-css.png" alt="Css">
-        <figure class="frame">
-        <h3>Description</h3>
+        <h1>30-Text Shadow</h1>
+        <img src="../src/images/logo-css.png" alt="Css">
+        <h3>Property that adds shadow effects directly to text content, taking values for offset, blur radius, and color.</h3>
     </header>
-  <section>
+    <section>
             <h2 class="subtitle">Examples:</h2>
             <p class="txt txt1">ADSO</p>
             <p class="txt txt2">C.P.I.C</p>

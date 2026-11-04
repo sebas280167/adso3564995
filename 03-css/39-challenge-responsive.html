@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>38-Media Queries</title>
+    <style>
+        * {
+            transition: all 0.4s ease;
+        }
+
+        body {
+            background: url(images/INUYASHA4.webp) no-repeat center / cover;
+            color: red;
+            font-family: sans-serif;
+            padding: 0;
+            margin: 0 auto;
+            background-attachment: fixed;
+
+            main {
+                border: 5px solid #fff;
+                padding: 1rem;
+                margin: 2rem auto;
+                width: 1228px; /* 1280px - (20px + 32px) */
+                height: 100%;
+
+                header {
+                    figure.logo {
+                        background: url("images/logo inuyasha2.jpeg") no-repeat center / contain;
+                        background-color: #000;
+                        padding: 0;
+                        height: 371px;
+                        margin: 0 auto;
+                        width: 100%;
+                        filter: drop-shadow(10px 10px 20px #ff5e5e);
+                    }
+
+                    menu {
+                        margin: 0;
+                        padding: 0;
+
+                        a:is(:link, :visited) {
+                            color: #fff;
+                            font-size: 1.2rem;
+                            padding: 1.4rem 1rem;
+                            display: inline-block;
+                            text-align: center;
+                            text-decoration: none;
+                            width: 180px;
+                            height: 180px;
+                            border-radius: 50%;
+                            margin: 0.5rem;
+                            border: 6px solid #fff;
+                            filter: grayscale(100%);
+
+
+                            &:first-of-type {
+                                background: url(images/inuyasha.jpg) no-repeat center / cover;
+                            }
+
+                            &:nth-of-type(2) {
+                                background: url(images/kagome.jpg) no-repeat center / cover;
+                            }
+
+                            &:nth-of-type(3) {
+                                background: url(images/sesshomaru.jpg) no-repeat center / cover;
+                            }
+
+                            &:nth-of-type(4) {
+                                background: url(images/miroku.jpg) no-repeat center / cover;
+                            }
+
+                            &:nth-of-type(5) {
+                                background: url(images/shippo.jpg) no-repeat center / cover;
+                            }
+
+                            &:hover {
+                                filter: grayscale(0%);
+                                font-weight: bold;
+                                font-size: 1.6rem;
+                                text-shadow: 2px 2px 2px #000;
+                            }
+                        }
+                    }
+                }
+
+                section {
+                    overflow: hidden;
+
+                    h3 {
+                        text-align: center;
+                        font-size: 2.8rem;
+                        text-shadow: 2px 2px 10px #e3b716;
+                    }
+
+                    p {
+                        line-height: 2rem;
+                        text-align: justify;
+                        font-size: 1.5rem;
+                        background-color: #000a;
+                        padding-right: 0.5rem;
+                    }
+                    img {
+                        display: inline-block;
+                        margin: 0 auto;
+                        width: 200px;
+                        float: left;
+                        padding: 0.5rem;
+                        filter: drop-shadow(0 0 12px #e81809);
+
+                        &:hover {
+                            transform: scale(1.3);
+                            box-shadow: 0 0 20px #d26008;
+                        }
+                    }
+                }
+            }
+        }
+
+
+        /* Media Queries */
+
+        /* Breakpoint:  1288px */
+
+        @media (max-width: 1288px) {
+            body {
+                main {
+                    width: 800px;
+
+                    header {
+                        figure.logo {
+                            height: 232px;
+                        }
+                        menu {
+                            a:is(:link, :visited) {
+                                width: 230px;
+                                height: 230px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+       
+        /* Breakpoint: 860px */
+        @media (max-width: 860px) {
+            body {
+                main {
+                    width: 360px;
+
+                    header {
+                        figure.logo {
+                            height: 100px;
+                        }
+                        menu {
+                            a:is(:link, :visited) {
+                                display: block;
+                                margin-bottom: 0.8rem;
+                                width: 300px;
+                                height: 300px;
+                            }
+                        }
+                    }
+                    section {
+                        article {
+                            img {
+                                width: 345px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <figure class="logo"></figure>
+            <menu>
+                <a href="#1">Inuyasha</a>
+                <a href="#2">Kagome</a>
+                <a href="#3">Sesshomaru</a>
+                <a href="#4">Miroku</a>
+                <a href="#6">Shippo</a>
+            </menu>
+        </header>
+        <section>
+            <article>
+                <h3 id="1">Inuyasha</h3>
+                <img class="inuyasha" src="images/inuyasha.jpg" alt="Inuyasha">
+                <p>
+                    Inuyasha es un hanyō, mitad demonio perro y mitad humano, y el protagonista de la serie. Es hijo del gran demonio perro Inu no Taishō y de la humana Izayoi. Lleva un haori rojo hecho con pelo de rata de fuego, tiene orejas de perro en la cabeza y usa la espada Colmillo de Acero (Tessaiga).<br> Es impulsivo, terco y de carácter fuerte, pero con el tiempo muestra que es leal y protector con quienes quiere. Su viaje comienza cuando busca los fragmentos de la Perla de Shikon junto a Kagome.
+                </p>
+            </article>
+        </section>
+        <section>
+            <article>
+                <h3 id="2">Kagome Higurashi</h3>
+                <img class="kagome" src="images/kagome.jpg" alt="Kagome">
+                <p>
+                    Kagome es una estudiante de secundaria del Japón actual que cae por el pozo del templo de su familia y llega a la época antigua. Es la reencarnación de la sacerdotisa Kikyo y tiene el poder de ver y purificar los fragmentos de la Perla de Shikon.<br> Es valiente, amable y muy decidida. Usa un arco con flechas sagradas y es quien mantiene unido al grupo, además de ser la única capaz de detener a Inuyasha con la famosa palabra "siéntate".
+                </p>
+            </article>
+        </section>
+        <section>
+            <article>
+                <h3 id="3">Sesshomaru</h3>
+                <img class="sesshomaru" src="images/sesshomaru.jpg" alt="Sesshomaru">
+                <p>
+                    Sesshomaru es un poderoso demonio perro, hermano mayor de Inuyasha por parte de padre. Tiene el cabello plateado, una luna creciente en la frente y marcas moradas en el rostro. Usa las espadas Tokijin y Bakusaiga, y lo acompaña su pequeño sirviente Jaken.<br> Al inicio es frío, orgulloso y desprecia a los humanos y a los medio demonios. Con el tiempo, y gracias a su relación con la pequeña Rin, va cambiando y muestra un lado más protector.
+                </p>
+            </article>
+        </section>
+        <section>
+            <article>
+                <h3 id="4">Miroku</h3>
+                <img class="miroku" src="images/miroku.jpg" alt="Miroku">
+                <p>
+                    Miroku es un monje budista que viaja con un bastón y un rosario en la mano derecha. Esa mano guarda el Agujero del Viento (Kazaana), una maldición heredada de su abuelo que lo absorbe todo a su paso y que puede matarlo con el tiempo.<br> Es astuto, sereno y bromista, aunque tiene fama de coqueto. Su meta es derrotar a Naraku para romper la maldición de su familia, y se une al grupo para lograrlo.
+                </p>
+            </article>
+        </section>
+        <section>
+            <article>
+                <h3 id="6">Shippo</h3>
+                <img class="shippo" src="images/shippo.jpg" alt="Shippo">
+                <p>
+                    Shippo es un pequeño demonio zorro que pierde a su padre a manos de los hermanos del Trueno y conoce a Kagome e Inuyasha en su búsqueda de venganza. Tiene cola esponjosa, cabello naranja y usa trucos de transformación con hojas y fuego fatuo.<br> Es travieso, sensible y a veces miedoso, pero muy valiente cuando importa. Con el tiempo se vuelve como un hijo para Kagome y el más tierno del grupo.
+                </p>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>32-clip-path</title>
+    <link rel="stylesheet" href="../src/css/master.css">
+    <style>
+        .clip {
+            background: url(images/pittsburgh.jpg) no-repeat center / cover;
+            margin: 2rem auto;
+            height: 240px;
+            width: 340px;
+            transition: all 0.5s ease;
+        }
+
+        .clip1 {
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        }
+
+        .clip2 {
+            clip-path: polygon(52% 65%, 21% 28%, 51% 64%, 78% 65%, 78% 65%, 43% 19%, 77% 29%, 37% 39%, 32% 17%, 60% 17%, 75% 18%, 90% 28%, 87% 46%, 26% 70%, 24% 58%, 19% 47%, 20% 36%);
+        }
+        .clip3 {
+            clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
+        }
+    </style>
+</head>
+<body class="css">
+    <nav class="goback">
+        <a href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#fff" viewBox="0 0 256 256">
+                <path d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z"></path>
+            </svg>
+        </a>
+    </nav>
+    <main>
+        <header class="mmenu internal">
+            <h1>32-clip-path</h1>
+            <img src="../src/imagenes/logo-css.png" alt="css">
+            <h3>Description</h3>
+        </header>
+        <section>
+            <h3 class="subtitle">Example 01:</h3>
+            <div class="clip clip1"></div>
+            <h3 class="subtitle">Example 02:</h3>
+            <div class="clip clip2"></div>
+            <h3 class="subtitle">Example 03:</h3>
+            <div class="clip clip3"></div>
+        </section>
+    </main>
+</body>
+</html>
